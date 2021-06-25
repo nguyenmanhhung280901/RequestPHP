@@ -31,4 +31,20 @@ class UserController extends Controller
     public function getUserDetail($id){
         return 'hello path' . $id;
     }
+
+    public function signup(){
+        return view('user.register');
+    }
+
+    public function processSignup(Request $request){
+        $fullName = $request->get('fullname');
+        $email = $request->get('email');
+        $phone = $request->get('phone');
+        $address = $request->get('address');
+        $identityCard = $request->get('identityCard');
+        return view('user.register-success') ->with('fullname', $fullName)
+         ->with('email', $email)
+         ->with('phone', $phone)
+        ->with('address', $address)
+         ->with('indentityCard', $identityCard);}
 }

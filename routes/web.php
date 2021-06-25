@@ -27,3 +27,6 @@ Route::post('/user/register', [UserController::class, 'xuliRegister']);
 
 Route::get('/user/login', [UserController::class, 'login']);
 Route::post('/user/detail/{id}', [UserController::class, 'getUserDetail']);
+
+Route::get('/user/signup', [UserController::class, 'signup']);
+Route::post('/user/register-success', [UserController::class, 'processSignup']);

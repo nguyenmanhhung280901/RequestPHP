@@ -8,7 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-
+    <h1>Register success!</h1>
+    <p>FullName: {{$fullname}}</p>
+    <p>Email: {{$email}}</p>
+    <p>Phone: {{$phone}}</p>
+    <p>Address: {{$address}}</p>
+    <p>IdentityCard: {{$identityCard}}</p>
 </body>
-</form>
 </html>

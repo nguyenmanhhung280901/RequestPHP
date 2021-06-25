@@ -39,7 +39,7 @@
 </h3>
 
 <div>
-    <form action="/user/register" method="post">
+    <form action="/user/signup" method="post">
         @csrf
         <label for="fname">Full Name</label>
         <input type="text" id="fname" name="fullname" placeholder="Your fullname..">
@@ -57,7 +57,7 @@
         <input type="text" id="iCard" name="identityCard" placeholder="Your identity Card..">
 
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" >
     </form>
 </div>
 
